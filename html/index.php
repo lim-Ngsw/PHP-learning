@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>php7.2-apache</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<?php 
-$date = date("Y/m/d H:i:s");
-print($date);
- ?>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>POSTのサンプル</title>
+  </head>
+  <body>
+    <?php
+      //commentがPOSTされているなら
+      if(isset($_POST["comment"])){
+        //エスケープしてから表示
+        $comment = htmlspecialchars($_POST["comment"]);
+        print("あなたのコメントは「 ${comment} 」です。");
+      } else {
+    ?>
+        <p>コメントしてください。</p>
+        <form method="POST" action="index.php">
+          <input name="comment" />
+          <input type="submit" value="送信" />
+        </form>
+    <?php
+      }
+    ?>
+  </body>
 </html>
