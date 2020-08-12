@@ -18,8 +18,13 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+// function（関数）('parameter（引数）');と書く。
+
+<?php
+print("I'm studying \"PHP\"");
+print("こんばんは！");
+?>
 </pre>
 </main>
-</body>    
+</body>
 </html>

@@ -18,7 +18,9 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+print(123+2 * 5 / 3);
+?>
 </pre>
 </main>
 </body>    
