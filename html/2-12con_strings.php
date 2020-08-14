@@ -18,7 +18,9 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+print('現在は' .date('G時i分s秒') .'です');
+?>
 </pre>
 </main>
 </body>    

@@ -18,7 +18,10 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+$today = new DateTime();
+print($today -> format('G時i分s秒'));
+?>
 </pre>
 </main>
 </body>    
