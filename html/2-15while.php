@@ -18,7 +18,16 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+$i =1;
+
+while($i <= 365){
+  print($i . "\n");
+  $i = $i + 1;
+}
+
+
+?>
 </pre>
 </main>
 </body>    
