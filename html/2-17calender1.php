@@ -18,7 +18,10 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+
+print(date('n/j(D)', time() + 60 * 60 * 24));
+?>
 </pre>
 </main>
 </body>    

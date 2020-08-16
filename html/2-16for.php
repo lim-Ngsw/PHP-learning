@@ -18,7 +18,11 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+for($i = 1; $i<=365; $i++){
+   print($i . "\n");
+}
+?>
 </pre>
 </main>
 </body>    
