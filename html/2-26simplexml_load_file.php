@@ -18,7 +18,15 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+$xmltree = simplexml_load_file('https://h2o-space.com/feed/');
+var_dump($xmltree);
+foreach($xmltree->channel->item as $item):
+?>
+・<a href="<?php print($item->link); ?><?php print($item->title); ?></a>
+<?php
+endforeach;
+?>
 </pre>
 </main>
 </body>    
