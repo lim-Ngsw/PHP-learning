@@ -17,10 +17,9 @@
 
 <main>
 <h2>Practice</h2>
-<form action="submit.php" method="get">
-   
-</form>
-<input type="text" id="my_name" name="my_name" maxlength="255" value="">
+<pre>
+    お名前: <?php print(htmlspecialchars($_REQUEST['my_name'], ENT_QUOTES)); ?>
+</pre>
 </main>
 </body>    
 </html>
